@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1565c0;
+            color: white;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        #home {
+            text-align: center;
+            padding: 50px;
+            background-color: #bbdefb;
+        }
+        .intro {
+            animation: fade-in 2s ease-in-out;
+        }
+        .my-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #64b5f6;
+        }
+        .details {
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+            background-color: #e1f5fe;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #projects {
+            padding: 50px;
+            background-color: #90caf9;
+        }
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            padding: 20px;
+            background-color: #e1f5fe;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        .project h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .project-video {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        #contact {
+            padding: 50px;
+            background-color: #bbdefb;
+            text-align: center;
+        }
+        #contact h2 {
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1565c0;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="one.JPG" alt="My Photo" class="my-photo">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I’m Pranove, a recent engineering graduate passionate about technology and proficient in programming and web development. I am seeking a job where I can apply my skills, learn from experienced mentors, and contribute value through problem-solving and collaboration in a dynamic environment.</p>
+        </div>
+        <div class="details">
+            <h3>Education</h3>
+            <p>SSLC in K.V.S English medium school, 2017-2018</p>
+            <p>HSC in Computer Science,K.V.S English medium school, 2019-2020</p>
+            <p>B.E in Mechatronics, Kongu Engineering College, 2024</p>
+            <h3>Professional Details</h3>
+            <p>I am a motivated software engineer with a solid foundation in programming, web development, and problem-solving. I hold a certification in Advanced Software Engineering in Python, where I gained expertise in front-end and full-stack technologies, including HTML, CSS, JavaScript, Python, Django, and SQL Server.
+
+                I have hands-on experience in building responsive, dynamic, and user-friendly web applications. Additionally, I completed a one-month internship at Unified Mentor Company, where I focused on developing responsive and scalable web applications. During this internship, I strengthened my skills in Python, HTML, CSS, and JavaScript while working on two projects: a dynamic control system simulation and a responsive web application. I gained valuable hands-on experience in version control, debugging, and applying software development principles. I am eager to continue learning and growing in the field of technology.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>amiso clean</h3>
+                <p>Designed a sample website named "Amiso Clean" for practicing Bootstrap, with a fully responsive layout and a clean design. The project was developed using HTML, CSS, JavaScript, and Bootstrap to create a modern and user-friendly interface, simulating a professional cleaning company’s online presence.</p>
+                <video src="two.mp4" class="project-video" muted></video>
+                <a href="https://vp13coder.github.io/amiso-clean/" class="btn btn-primary">Project Link</a>
+            </div>
+            <div class="project">
+                <h3>VP Traders website</h3>
+                <p>Developed a website for Dhall Manufacturing Company with a user-friendly interface, product details, and contact options to boost customer engagement and streamline operations. The frontend was built using HTML, CSS, and JavaScript, while the backend was developed using Django for robust functionality.</p>
+                <video src="three.mp4" class="project-video" muted></video>
+                <a href="https://github.com/vp13coder/vp-traders-website" class="btn btn-primary">Project Link</a>
+            </div>
+            <div class="project">
+                <h3>webtalator</h3>
+                <p>Built a web calculator featuring an easy-to-use interface that performs basic arithmetic operations and displays a history of all calculations. The frontend was developed entirely using HTML, CSS, and JavaScript to ensure a smooth user experience without requiring any backend support.</p>
+                <video src="four.mp4" class="project-video" muted></video>
+                <a href="https://vp13coder.github.io/webtalator/" class="btn btn-primary">Project Link</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: vpranove@gmil.com</p>
+        <p>Phone: 9600321766</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pranove-v/">linkedin.com/in/pranove-v</a></p>
+        <p>github: <a href="https://github.com/vp13coder">github.com/vp13coder</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Play video on hover
+        document.querySelectorAll('.project-video').forEach(video => {
+            video.addEventListener('mouseover', () => video.play());
+            video.addEventListener('mouseout', () => video.pause());
+        });
+
+        // Add animation to intro
+        document.addEventListener('DOMContentLoaded', () => {
+            const intro = document.querySelector('.intro');
+            intro.classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>
